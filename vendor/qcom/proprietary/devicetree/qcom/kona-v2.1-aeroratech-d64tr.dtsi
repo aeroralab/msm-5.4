@@ -38,6 +38,12 @@
 			};
 		};
 	};
+
+	cam_vcm_suspend_rear: cam_vcm_suspend_rear {
+		config {
+			/delete-property/ bias-pull-down; /* PULL DOWN */
+		};
+	};
 };
 
 &mdss_mdp {
@@ -347,7 +353,7 @@
 		red_led {
 			label = "rgb-red";
 			gpios = <&tlmm 128 GPIO_ACTIVE_HIGH>;
-			default-state = "off";
+			default-state = "on";
 		};
 
 		blue_led {
