@@ -41,7 +41,6 @@
 
 	cam_vcm_suspend_rear: cam_vcm_suspend_rear {
 		config {
-			pins = "gpio97";
 			/delete-property/ bias-pull-down; /* PULL DOWN */
 		};
 	};
